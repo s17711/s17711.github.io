@@ -1,0 +1,109 @@
+.slide-but-left, .slide-but-right
+	position: absolute
+	max-width: 30%
+	z-index: 10
+	font-size: 22px
+	border-radius: 100%
+	padding: 9px 14px 7px 14px
+	top: 50%
+	cursor: pointer
+	background-color: $muted-gray
+
+.slide-but-left
+	left: 0
+	transform: translateX(-110%) translateY(-50%)
+
+.slide-but-right
+	right: 0
+	transform: translateX(110%) translateY(-50%)
+	
+
+.slider-list
+	position: relative
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	list-style-type: none
+	overflow: hidden
+	
+	.slider-el, .slider-el-img, h2, p 
+		transition: all 0.7s ease-in-out
+
+	.slider-el
+		position: absolute
+		text-align: center
+		width: 30%
+		margin-top: 45px
+
+		h2
+			margin-top: 15px
+			font-size: 18px
+			color: #666
+		p
+			opacity: 0
+			margin-top: 10px
+			font-size: 15px
+			color: #666
+
+
+		a
+			position: relative
+			width: 100%
+			text-decoration: none
+			outline: none
+		
+		.slider-el-img
+			width: 150px
+			height: 150px
+			border-radius: 100%
+			margin-left: 50%
+			transform: translateX(-50%)
+			overflow: hidden
+			img
+				width: 100% 
+
+		&--left
+			left: 0
+
+		&--center
+			margin-top: 0
+			left: 50%
+			transform: translateX(-50%)
+			.slider-el-img
+				width: 250px
+				height: 250px
+			h2
+				font-size: 23px
+				color: white
+			p
+				opacity: 1
+				font-size: 18px
+				color: white
+
+
+
+
+		&--right
+			left: 100%
+			transform: translateX(-100%)
+		
+		&--right-out, &--left-out
+			opacity: 0
+			.slider-el-img
+				width: 100px
+				height: 100px
+			h2
+				font-size: 15px
+				color: #444
+
+
+		&--right-out
+			transform: translateX(-150%)
+			left: 150%
+
+		&--left-out
+			transform: translateX(50%)
+			left: -50%
+
