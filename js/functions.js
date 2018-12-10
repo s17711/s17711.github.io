@@ -12,7 +12,9 @@ $(document).on('mousewheel DOMMouseScroll', '.container', function(event){
 	var slideActive = $('.slide--active');
 
 	if(wheel > 0){
+		console.log(wheel);
 		if(navActive.index() == navActive.parent().children().length - 1){
+			console.log(0);
 			navActive.removeClass('side-nav--list-active')
 				.parent()
 				.children()
@@ -23,8 +25,7 @@ $(document).on('mousewheel DOMMouseScroll', '.container', function(event){
 			setTimeout(function(){
 				removeNextPrev();
 
-				slideActive.removeClass('slide--active')
-					.parent()
+				slideActive.parent()
 					.children()
 					.eq(0)
 					.addClass('slide--active');
@@ -33,8 +34,9 @@ $(document).on('mousewheel DOMMouseScroll', '.container', function(event){
 			}, 400);
 
 		} else {
+			console.log(1);
 			navActive.removeClass('side-nav--list-active').next().addClass('side-nav--list-active');
-			slideActive.removeClass('slide--active').addClass('slide--next');
+			slideActive.addClass('slide--next').removeClass('slide--active');
 
 			setTimeout(function(){
 				removeNextPrev();
