@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+@import url('animation.css');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, p{
+	cursor: default;
+}
+
+.startboard{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-image: url(image/xiaomimijiasmae.jpg);
+	background-attachment: fixed;
+}
+
+.startboard-mask{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	min-height: 850px;
+}
+
+.startboard-content{
+	position: absolute;
+	margin-left: 220px;
+	top: 50%;
+	transform: translateY(-50%);
+	animation: 1s ease-out 0s 1 starboardcontent;
+}
+
+h1{
+	font-size: 85px;
+	color: #ff6709;
+	line-height: 0.9;
+	font-weight: bold;
+}
+
+.startboard-content h2 {
+	font-size: 36px;
+	color: #fff;
+	line-height: 0.9;
+	font-weight: normal;
+	margin-top: 25px;
+}
+
+.startboard-button{
+	cursor: pointer;
+	margin-top: 80px;
+	font-size: 20px;
+	background: #ff6709;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	padding: 11px 24px;
+	box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.22);
+	border-radius: 4px;
+	transition: all 0.33s ease-in-out;
+	outline: none;
+}
+
+.startboard-button:hover{
+	background: #fff;
+	color: #222;
+}
+
+
+
+.buy-wrap{
+	width: 100%;
+	padding: 85px 0;  
+}
+
+.buy-wrap h3{
+	color: #222;
+	font-weight: bold;
+	margin: 15px 0;
+	font-size: 25px;
+}
+
+.price{
+	font-weight: bold;
+}
+
+.price .new{
+	font-size: 23px;
+	color: #333;
+	padding-right: 15px;
+}
+
+.price .ex{
+	font-size: 23px;
+	color: #999;
+	text-decoration: line-through;
+}
+
+.buy-wrap p{
+	color: #444;
+	font-size: 15px;
+}
+
+.buy-wrap-button{
+	cursor: pointer;
+	margin-top: 13px;
+	font-size: 20px;
+	background: #ff6709;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	padding: 11px 24px;
+	box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.22);
+	border-radius: 4px;
+	transition: all 0.33s ease-in-out;
+	outline: none;
+	width: 100%;
+}
+
+.buy-wrap-button:hover{
+	background: #222;
+	color: #fff;
+}
+
+.buy-wrap .select-title{
+	margin-bottom: 4px;
+	font-size: 17px;
+}
+
+.buy-sel{
+	width: 120px;
+    border: 1px #ddd solid;
+    background: #f8f8f8;
+    color: #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 2px 30px 2px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Slider  */
+.buy-slaider{
+	width: 100%;
+	background-image: url(image/Y5151B-1-5a41-pYsG.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	height: 580px;
+}
+
+.buy-slides{
+	margin: 15px 0;
+}
+
+.slide{
+	cursor: pointer;
+	margin-right: 5px;
+	width: 65px;
+	height: 65px;
+	border: 2px solid #999;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	display: inline-block;
+}
+
+/* SEC 3 */
+
+.sec-3{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 850px;
+	height: 100vh;
+	background-image: url(image/xiaomi_mijia_smart_e.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center 30%;
+}
+
+.sec-3-mask{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.sec-3-content{
+	width: 100%;
+	max-width: 1100px;
+	padding: 0 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.sec-3-content h2{
+	font-size: 28px;
+	color: #ff6709;
+	font-weight: bold;
+	text-align: right;
+}
+
+.sec-3-content h3{
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	text-align: right;
+}
+
+.sec-3-content p {
+	margin-top: 30px;
+	font-size: 18px;
+	color: rgba(255,255,255,0.88);
+	text-align: right;
+
+}
+
+/* sec 4 */
+
+.sec-4{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-height: 800px;
+	height: 100vh;
+}
+
+.sec-4{
+	position: relative;
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-grow: 3; 
+	flex-grow: 3;
+	min-height: 950px;
+}
+
+.sec-4 .block-1, .block-2{
+	width: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
+.block-1{
+	background-color: #efefef;
+	height: 100%;
+}
+
+.h-center{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 75px;
+}
+
+.block-1 h2{
+	font-size: 33px;
+	font-weight: normal;
+	color: #555;
+}
+
+.block-1 p{
+	font-size: 20px;
+	color: #333;
+	font-weight: lighter;
+}
+
+.block-1 .startboard-button{
+	margin-top: 40px;
+	font-size: 17px;
+	display: block;
+}
+.block-1 .startboard-button:hover{
+	background-color: #000;
+	color: #fff;
+}
+
+.block-2{
+	background-image: url(image/xiaomi_mijia_smart_e.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+.block-2-bg-wrap{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.2);
+	transition: all 0.33s ease-in-out;
+}
+
+.sec-4:hover .block-2-bg-wrap{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.sec-5{
+	width: 100%;
+	padding: 85px 0;  
+}
+
+.sec-5-content h3{
+	font-size: 24px;
+	font-weight: bold;
+	color: #444;
+}
+
+.sec-5-content p{
+	padding-top: 24px;
+}
+
+#slider-sec-5{
+	background-image: url(image/m365-5.jpg);
+	height: 530px;
+}
+
+.sec-5 .prev{
+	margin-top: 30px;
+	font-size: 19px;
+	color: #777;
+	font-weight: lighter;
+}
+
+.prev p {
+	line-height: 1;
+}
+
+.sec-6{
+	position: relative;
+	background-image: url(image/xiaomi_mijia.jpg);
+	width: 100%;
+	min-height: 800px;
+	height: 100vh;
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.sec-6-mask{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	position: absolute;
+}
+
+.sec-6-content{
+	position: absolute;
+	max-width: 1250px;
+	width: 100%;
+	padding: 100px 30px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sec-6-content h2{
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	color: rgba(255,255,255,1);
+}
+
+.sec-6-content p{
+	margin-top: 30px;
+	font-size: 18px;
+	text-align: center;
+	color: rgba(255,255,255, 0.9);
+}
+
+.sk-image-wrap{
+	padding: 25px 15px;
+	text-align: center;
+}
+
+.sk-image-wrap img{
+	margin: 0 auto;
+	width: 840px;
+	max-width: 100%;
+}
+
+.sec-7 .block-2{
+	background-image: url(image/m365---.jpg);
+}
+
+.sec-7 .block-2-bg-wrap{
+	display: none;
+}
+
+
+
+.desc-block{
+	position: relative;
+	background-color: #222;
+	margin: 70px auto;
+	max-width: 80%;
+	width: 1100px;
+	padding: 25px;
+}
+
+.desc-block .text-block{
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 25px;
+	height: 100%;
+}
+
+.desc-block .text-block-center{
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+}
+
+.desc-block .text-block h2{
+	font-size: 23px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.desc-block .text-block p{
+	font-size: 17px;
+	color: #eee;
+	color: #ededed;
+	font-weight: lighter;
+}
+
+.sec-8{
+	margin: 40px 0;
+}
+
+.sec-8--bg-wrap{
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+.sec-8 .text-content{
+	margin-top: 50%;
+	transform: translateY(-100%);
+}
+
+.sec-8 .text-content h2{
+	font-size: 28px;
+	font-weight: bold;
+	color: #222;
+	margin-bottom: 25px;
+}
+
+.sec-8 .text-content p{
+	font-size: 18px;
+	font-weight: lighter;
+	color: #444;
+}
+
+.sec-9{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	min-height: 850px;
+	background-image: url(image/m.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50% 35%;
+}
+
+.sec-9-block{
+	position: absolute;
+	background-color: #222;
+	width: 550px;
+	padding: 20px;
+	max-width: 80%;
+	right: 70px;
+	bottom: 70px;
+}
+
+.sec-9-block h2{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.sec-9-block p{
+	font-size: 16px;
+	font-weight: lighter;
+	color: #fff;
+}
+
+
+.sec-10{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	min-height: 850px;
+	background-image: url(image/photo.png);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50% 35%;
+}
+
+.sec-10-block{
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width: 550px;
+	padding: 20px;
+	max-width: 80%;
+	left: 70px;
+	bottom: 70px;
+}
+
+.sec-10-block h2{
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.sec-10-block p{
+	font-size: 16px;
+	font-weight: lighter;
+	color: #fff;
+}
+
+.sec-11 .block-2{
+	background-image: url(image/mb.jpg);
+}
+
+
+.how-b{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+
+.how-b h2{
+	color: #222;
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	text-transform: uppercase;
+	margin-bottom: 85px;
+}
+
+.how-b h2 span{
+	color: #ff6709;
+}
+
+.how-b-col{
+	padding-right: 20px;
+}
+
+.how-b-col:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  z-index: -1;
+  margin-top: 12px;
+}
+
+
+.how-b-col .num{
+	font-weight: bold;
+	padding: 8px 14px;
+	background-color: #222;
+	color: #fff;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 19px;
+}
+
+.how-b-col h3{
+	margin-top: 30px;
+	font-weight: bold;
+	color: #222;
+	font-size: 19px;
+	margin-bottom: 15px;
+}
+
+.how-b-col p{
+	font-size: 17px;
+	font-weight: normal;
+	color: #333;
+}
+
+
+.dis-hidden{
+	display: none;
+}
+
+
+
+
+/*		Meadia 		*/
+
+@media screen and (max-width: 1000px) {
+	.startboard-content{
+		margin-left: 30px;
+	}
+
+	.startboard-content h1{
+		font-size: 75px;	
+	}
+
+	.startboard-content h2{
+		font-size: 40px;	
+	}
+
+  .mob-hidden{
+  	display: none;
+  }
+
+  .mob-vis{
+  	display: block;
+  }
+
+  .sec-4 {
+  	display: block;
+  }
+
+  .sec-4 .block-1{
+  	width: 100%;
+  }
+
+  .block-1 h2{
+		font-size: 22px;
+		font-weight: normal;
+		color: #555;
+	}
+
+	.block-1 p{
+		font-size: 17px;
+	}
+
+	.h-center{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		padding: 0 20px;
+	}
+
+	.desc-block .text-block{
+		width: 100%;
+	}
+
+	.desc-block .text-block-center{
+		border-left: none;
+		border-right: none;
+		border-top: 1px solid #666;
+		border-bottom: 1px solid #666;
+	}
+
+	.sec-8--image-wrap-mob img{
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	.sec-8 .text-content{
+		margin-top: 40px;
+		transform: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#slider-sec-5{
+		height: 300px;
+	}
+
+	.startboard-content{
+		margin-left: 30px;
+	}
+
+	.startboard-content h1{
+		font-size: 50px;	
+	}
+
+	.startboard-content h2{
+		font-size: 30px;	
+	}
+
+	.desc-block .text-block{
+		padding: 25px 8px
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#slider-sec-5{
+		height: 220px;
+	}
+
+	.buy-slaider{
+		height: 365px;
+	}
+
+	.how-b h2{
+		font-size: 29px;
+	}
+
+	.startboard-content{
+		margin-left: 30px;
+	}
+
+	.startboard-content h1{
+		font-size: 40px;	
+	}
+
+	.startboard-content h2{
+		font-size: 25px;	
+	}
+}
