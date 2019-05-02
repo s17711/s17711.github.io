@@ -10,12 +10,37 @@
 	<script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
+	<div class="modal-view dilivery">
+		<div class="modal-close-wrap"></div>
+		<div class="modal-view-content">
+			<div class="modal-close"></div>
+			<h2>Доставка</h2>
+			<p>Доставка по РФ <b>бесплатно.</b></p>
+			<p>Доставка осуществляется во все города России.</p>
+			<p>Сроки доставки уточняются у менеджера по телефону.</p>
+			<p><b>В Перми</b> можно забрать из ближайшего магазина BEST ELECTRONICS.</p>
+		</div>
+	</div>
+	<div class="modal-view order-buy">
+		<div class="modal-close-wrap"></div>
+		<div class="modal-view-content">
+			<div class="modal-close"></div>
+			<h2>Оформить заказ</h2>
+			<p class="input-name">Имя <span>*</span></p>
+			<input type="text" name="name">
+			<p class="input-name">Телефон <span>*</span></p>
+			<input type="text" name="phone">
+			<p class="input-name">Email </p>
+			<input type="text" name="name">
+			<button class="send-order">Отправить</button>
+		</div>
+	</div>
 	<div class="startboard">
 		<div class="startboard-mask"></div>
 		<div class="startboard-content">
 			<h1>Mijia M365<br>Xiaomi</h1>
 			<h2>Безупречный транспорт <br> доступный каждому</h2>
-			<button class="startboard-button">оформить заказ</button>	
+			<button class="startboard-button order-buy-open">оформить заказ</button>	
 		</div>
 	</div>
 	<div class="buy-wrap">
@@ -23,28 +48,14 @@
 			<div class="row justify-content-md-center">
 				<div class="col-lg-8">
 					<div class="buy-slaider">
-						
-					</div>
-					<div class="buy-slides">
-						<div class="slide" style="background-image: url(image/Y5151B-1-5a41-pYsG.jpg);"></div>
-						<div class="slide" style="background-image: url(image/234512.jpg);"></div>
-					</div>
+					</div>					
 				</div>
 				<div class="col-lg-4">
 					<h3>Xiaomi Mijia Electric Scooter M365</h3>
-					<p class="price"><span class="new">₽19 344</span><span class="ex">₽35 335</span></p>
-					<p class="select-title">Цвет</p>
-					<select name="color-sel" class="buy-sel">
-						<option value="black">Черный</option>
-						<option value="white">Белый</option>
-					</select>
-					<p class="select-title">Версия</p>
-					<select name="color-sel" class="buy-sel">
-						<option value="black">Replica</option>
-						<option value="white">Original</option>
-					</select>
+					<p class="price"><span class="new">₽24 500</span><span class="ex">₽29 990</span></p>
+					<p class="select-title">Цвет: <b>Черный</b></p>					
 					<p>XIAOMI MIJIA M365 — это, возможно, самый популярный на рынке электросамокат, который пользуется огромным спросом во всем мире. Вышедший на рынок в 2016 году, он стал настоящим хитом, купить XIAOMI MIJIA M365 решили уже сотни тысяч пользователей. И они не были разочарованы! Ведь электросамокат XIAOMI MIJIA ELECTRIC SCOOTER это мощный двигатель (250 W), емкий аккумулятор (7,8 А/ч), который обеспечивает 30 км пробега при полной зарядке при максимальной скорости 25 км/ч, малый вес, надежная сборка. Электросамокат MI ELECTRIC SCOOTER – это реально удобно!</p>
-					<button class="buy-wrap-button">оформить заказ</button>
+					<button class="buy-wrap-button order-buy-open">оформить заказ</button>
 				</div>
 			</div>
 		</div>
@@ -71,7 +82,7 @@
 				<div class="col-lg-3 how-b-col">
 					<span class="num">4</span>
 					<h3>Платите как вам удобно</h3>
-					<p>У нас удобные формы оплаты. Можно купить электросамокат XIAOMI MIJIA M365 в Москве с оплатой наличными курьеру или оплатить через интернет.</p>
+					<p>У нас удобные формы оплаты. Можно купить электросамокат XIAOMI MIJIA M365 в Перми с оплатой наличными курьеру или оплатить через интернет.</p>
 				</div>
 			</div>
 		</div>
@@ -94,7 +105,7 @@
 			<div class="h-center">
 				<h2>Изящество в каждой линии</h2>
 				<p>Дизайн, безусловно, дизайн – самая сильная сторона XIAOMI M365. Скажем откровенно, самокатов с подобными характеристиками немало. Но почему покупатели предпочитают купить самокат XIAOMI MIJIA M365, пусть даже немного дороже? Все просто – он очень красивый. Дизайн неброский, его скорее можно назвать минималистичным, футуристическим. Электросамокат ELECTRIC SCOOTER словно сошел с экранов утопий о технологичном будущем с роботами и полетами на Марс. При всей своей простоте электросамокат XIAOMI MIJIA ELECTRIC SCOOTER M365 вполне функциональный и управляемый буквально одним нажатием кнопки!</p>
-				<button class="startboard-button">оформить заказ</button>
+				<button class="startboard-button order-buy-open">оформить заказ</button>
 			</div>
 		</div>
 		<div class="block-2 mob-hidden">
@@ -105,10 +116,10 @@
 		<div class="container">
 			<div class="row justify-content-md-center">
 				<div class="col-lg-8">
-					<div class="buy-slaider" id="slider-sec-5">
+					<div class="buy-slaider res-slider" id="slider-sec-5">
 					</div>
-					<div class="buy-slides">
-						<div class="slide" style="background-image: url(image/m365-5.jpg);"></div>
+					<div class="buy-slides res-slides">
+						<div class="slide slide-active" style="background-image: url(image/m365-5.jpg);"></div>
 						<div class="slide" style="background-image: url(image/4-14.png);"></div>
 						<div class="slide" style="background-image: url(image/Bez-imeni-111-1024x6.jpg);"></div>
 						<div class="slide" style="background-image: url(image/IMG_20180622_150216.jpg);"></div>
@@ -118,10 +129,10 @@
 				<div class="col-lg-4 sec-5-content">
 					<h3>4 часа зарядки и вы можете ездить целый день!</h3>
 					<p>Подарите себе свободу с XIAOMI MIJIA ELECTRIC SCOOTER! Этот аппарат словно просится стать вашим другом, сопровождать своего хозяина каждое утро в поездках на учебу или работу!</p>
-					<p>Перечислим основные преимущества, за которые решили купить в Москве электросамокат XIAOMI MIJIA M365 тысячи людей (в Москве и других городах): </p>
+					<p>Перечислим основные преимущества, за которые решили купить в Перми электросамокат XIAOMI MIJIA M365 тысячи людей (в Перми и других городах): </p>
 					<p>Он быстро разбирается и собирается.</p>
 					<p>Простое управление и настройка через приложение на смартфоне </p>
-					<button class="buy-wrap-button">оформить заказ</button>
+					<button class="buy-wrap-button order-buy-open">оформить заказ</button>
 				</div>
 			</div>
 			<div class="container" style="padding: 0;">
@@ -151,7 +162,7 @@
 		<div class="block-1">
 			<div class="h-center">
 				<p>Как электросамокат XIAOMI MIJIA M365 связан с космосом, аэролайнерами и вообще полетами? Нет, к сожалению, самокат XIAOMI MIJIA M365 не может летать, но инженеры китайской компании работают над этим (шутка). Он просто сделан из того же материала, что и космические корабли с боингами. Это сплав алюминия с редкими металлами. Сплав очень легкий и прочный, поэтом XIAOMI SCOOTER M365 весит 12,5 кг.</p>
-				<button class="startboard-button">оформить заказ</button>
+				<button class="startboard-button order-buy-open">оформить заказ</button>
 			</div>
 		</div>
 		<div class="block-2">
@@ -237,28 +248,14 @@
 			<div class="row justify-content-md-center">
 				<div class="col-lg-8">
 					<div class="buy-slaider">
-						
-					</div>
-					<div class="buy-slides">
-						<div class="slide" style="background-image: url(image/Y5151B-1-5a41-pYsG.jpg);"></div>
-						<div class="slide" style="background-image: url(image/234512.jpg);"></div>
-					</div>
+					</div>					
 				</div>
 				<div class="col-lg-4">
 					<h3>Xiaomi Mijia Electric Scooter M365</h3>
-					<p class="price"><span class="new">₽19 344</span><span class="ex">₽35 335</span></p>
-					<p class="select-title">Цвет</p>
-					<select name="color-sel" class="buy-sel">
-						<option value="black">Черный</option>
-						<option value="white">Белый</option>
-					</select>
-					<p class="select-title">Версия</p>
-					<select name="color-sel" class="buy-sel">
-						<option value="black">Replica</option>
-						<option value="white">Original</option>
-					</select>
+					<p class="price"><span class="new">₽24 500</span><span class="ex">₽29 990</span></p>
+					<p class="select-title">Цвет: <b>Черный</b></p>					
 					<p>XIAOMI MIJIA M365 — это, возможно, самый популярный на рынке электросамокат, который пользуется огромным спросом во всем мире. Вышедший на рынок в 2016 году, он стал настоящим хитом, купить XIAOMI MIJIA M365 решили уже сотни тысяч пользователей. И они не были разочарованы! Ведь электросамокат XIAOMI MIJIA ELECTRIC SCOOTER это мощный двигатель (250 W), емкий аккумулятор (7,8 А/ч), который обеспечивает 30 км пробега при полной зарядке при максимальной скорости 25 км/ч, малый вес, надежная сборка. Электросамокат MI ELECTRIC SCOOTER – это реально удобно!</p>
-					<button class="buy-wrap-button">оформить заказ</button>
+					<button class="buy-wrap-button order-buy-open">оформить заказ</button>
 				</div>
 			</div>
 		</div>
@@ -285,10 +282,23 @@
 				<div class="col-lg-3 how-b-col">
 					<span class="num">4</span>
 					<h3>Платите как вам удобно</h3>
-					<p>У нас удобные формы оплаты. Можно купить электросамокат XIAOMI MIJIA M365 в Москве с оплатой наличными курьеру или оплатить через интернет.</p>
+					<p>У нас удобные формы оплаты. Можно купить электросамокат XIAOMI MIJIA M365 в Перми с оплатой наличными курьеру или оплатить через интернет.</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<footer>
+		<div class="footer-top-box">
+			<div class="container">
+				<span class="open-dilivery">Доставка</span>
+				<span>Оплата</span>
+			</div>
+		</div>
+		<div class="footer-content">
+			<div class="container">
+				<p>Больше товаров на сайте <a href="https://bestelectronics.pro">bestelectronics.pro</a></p>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
