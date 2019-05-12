@@ -24,6 +24,7 @@ h1, h2, h3, p{
 	background-position: 50% 50%;
 	background-image: url(image/a205ee88e1be7bab.jpg);
 	background-attachment: fixed;
+	min-height: 850px;
 }
 
 .startboard-mask{
