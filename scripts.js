@@ -6,7 +6,7 @@ $(document).ready(function(){
 	});
 
 	$('.order-buy-open').click(function(){
-		$('.order-buy').addClass('modal-view-active');
+		$('.order-buy-s').addClass('modal-view-active');
 	});
 
 	$('.phone-box-open').click(function(){
