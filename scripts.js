@@ -9,6 +9,30 @@ $(document).ready(function(){
 		$('.order-buy').addClass('modal-view-active');
 	});
 
+	$('.phone-box-open').click(function(){
+
+		if($('.phone-box-open').hasClass('phone-box-open-active')){
+			
+			$('.phone-box-open').removeClass('phone-box-open-active');
+			$('.modal-view-active').removeClass('modal-view-active');
+
+		} else {
+			
+			$('.phone-box-open').addClass('phone-box-open-active');
+			$('.phone-box').addClass('modal-view-active');
+		}
+	});
+
+
+	$('.phone-box-close').click(function(){
+		if($('.phone-box-open').hasClass('phone-box-open-active'))
+			$('.phone-box-open').removeClass('phone-box-open-active');
+	});
+
+	$('.phone-s-open').click(function(){
+		$('.phone-s').addClass('modal-view-active');
+	});
+
 
 
 	$('.modal-close').click(function(){
