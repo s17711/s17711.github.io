@@ -1,4 +1,13 @@
 $(document).ready(function(){
+	var image = new Image();
+	image.src = "image/bg1-1920x1080.jpg";
+
+	image.onload = function(){
+		var node = document.querySelector('.startboardBg');
+		node.style.opacity = '1';
+	}
+
+
 	var dl = $('.dilivery');
 
 	$('.open-dilivery').click(function(){
